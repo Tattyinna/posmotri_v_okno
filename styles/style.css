@@ -140,6 +140,10 @@ ol {
   border: 1px solid #fff;
 }
 
+.search-form__checkbox-list .search-form__label:hover {
+  text-decoration-line: underline;
+}
+
 .search-form__textfield:hover {
   cursor: auto;
 }
@@ -158,19 +162,13 @@ ol {
   position: relative;
 }
 
-.search-form__label-text:hover {
-  text-decoration-line: underline;
-}
-
 .search-form__pseudo-checkbox::before {
   content: "";
   display: none;
-  width: 15px;
-  height: 15px;
-  left: 1px;
-  top: 1px;
+  width: 14px;
+  height: 14px;
   background-color: #fff;
-  position: absolute;
+  margin: 1px;
 }
 
 .search-form__checkbox:checked ~ .search-form__pseudo-checkbox::before {
@@ -186,9 +184,8 @@ ol {
   flex-direction: column;
   height: 295px;
   min-width: 399px;
-  overflow: scroll;
+  overflow: auto;
   margin-top: 26px;
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -279,6 +276,7 @@ ol {
   font-weight: 700;
   line-height: normal;
   border: 1px solid #fff;
+  margin: 3px;
 }
 
 .more-button {
@@ -295,7 +293,7 @@ ol {
 }
 
 .button:focus-visible {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
