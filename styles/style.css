@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -39,11 +40,10 @@ ol {
 
 .content {
   display: flex;
+  margin: auto;
   flex-direction: row;
   align-items: flex-end;
-  margin: 0 auto;
   gap: 30px;
-  margin-top: 133px;
 }
 
 .visually-hidden {
